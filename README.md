@@ -25,8 +25,17 @@ O protótipo funcionará da seguinte forma: o NodeMCU realizará leituras dos se
 ## 3. Resultados
 ### 3.1 Montagem em Funcionamento
 A montagem em funcionamento da estação meteorológica pode ser visualizada na imagem abaixo:
+Peças de Montagem:
 
-[Inserir Imagens de Montagem Aqui]
+### Componentes Utilizados:
+
+![Sensor Digital ](https://github.com/BecaRebecaRe/estacao-meterologica/assets/132020428/e4a08404-c9d0-4ff7-8d78-265d663af494)
+
+![MICROCONTROLADOR POPULAR ](https://github.com/BecaRebecaRe/estacao-meterologica/assets/132020428/e8f6c1b2-a7b1-4ae1-82a8-be485175abaf)
+
+### Estação Meterológica:
+
+![Estação Meterologica](https://github.com/BecaRebecaRe/estacao-meterologica/assets/132020428/5d00562a-ec4f-4f1f-bba0-1b213e334837)
 
 ### 3.2 Vídeo-Demonstração
 Um vídeo-demonstração do funcionamento da estação meteorológica está disponível no seguinte link: [Inserir Link do Vídeo Aqui]
@@ -34,16 +43,13 @@ Um vídeo-demonstração do funcionamento da estação meteorológica está disp
 ### 3.3 Medição de Tempo de Resposta
 Os tempos médios de resposta entre o envio de comandos e a ação do atuador, bem como entre a detecção de um sensor e o recebimento dos dados no MQTT, foram medidos conforme a tabela abaixo:
 
-| Núm. medida | Sensor/atuador | Tempo de resposta |
-|--------------|----------------|-------------------|
-| 1            | Sensor         | X milissegundos  |
-| 2            | Atuador        | Y milissegundos  |
-| ...          | ...            | ...               |
+![Tabela Resultados](https://github.com/BecaRebecaRe/estacao-meterologica/assets/132020428/3e0dcb4e-71e1-4e53-803c-33455c756440)
+
 
 ### 3.4 Outros Gráficos e Imagens
 Outros gráficos e imagens do funcionamento do protótipo e da comunicação com o broker MQTT podem ser visualizados a seguir:
 
-[Inserir Outros Gráficos e Imagens Aqui]
+![Tabela Resultados](https://github.com/BecaRebecaRe/estacao-meterologica/assets/132020428/3e0dcb4e-71e1-4e53-803c-33455c756440)
 
 ## 4. Repositório no GitHub
 Incluímos o link para o repositório no GitHub contendo a documentação completa do projeto, incluindo uma descrição do funcionamento, o código fonte, a lista de materiais e demais informações relevantes.
