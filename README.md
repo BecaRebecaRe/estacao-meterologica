@@ -13,7 +13,6 @@ O módulo de comunicação escolhido é o NodeMCU, que possui capacidade de cone
 ### 2.3 Desenho e Esquema Eletrônico
 O esquema eletrônico do projeto, mostrando a conexão entre o NodeMCU, os sensores e o módulo Wi-Fi, está representado abaixo:
 
-[Inserir Desenho/Esquema Eletrônico Aqui]
 
 ![image](https://github.com/BecaRebecaRe/estacao-meterologica/assets/132020428/4285dfdb-c5ef-46ec-9a67-5aad41fff555)
 
@@ -38,13 +37,10 @@ Peças de Montagem:
 ![Estação Meterologica](https://github.com/BecaRebecaRe/estacao-meterologica/assets/132020428/5d00562a-ec4f-4f1f-bba0-1b213e334837)
 
 ### 3.2 Vídeo-Demonstração
-Um vídeo-demonstração do funcionamento da estação meteorológica está disponível no seguinte link: [Inserir Link do Vídeo Aqui]
+Um vídeo-demonstração do funcionamento da estação meteorológica está disponível no seguinte link: https://youtu.be/wSes7WXDoG0?si=9FJy1RFKbv7OFrQn
 
 ### 3.3 Medição de Tempo de Resposta
 Os tempos médios de resposta entre o envio de comandos e a ação do atuador, bem como entre a detecção de um sensor e o recebimento dos dados no MQTT, foram medidos conforme a tabela abaixo:
-
-![Tabela Resultados](https://github.com/BecaRebecaRe/estacao-meterologica/assets/132020428/3e0dcb4e-71e1-4e53-803c-33455c756440)
-
 
 ### 3.4 Outros Gráficos e Imagens
 Outros gráficos e imagens do funcionamento do protótipo e da comunicação com o broker MQTT podem ser visualizados a seguir:
