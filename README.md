@@ -51,11 +51,8 @@ Outros gráficos e imagens do funcionamento do protótipo e da comunicação com
 
 ![Tabela Resultados](https://github.com/BecaRebecaRe/estacao-meterologica/assets/132020428/3e0dcb4e-71e1-4e53-803c-33455c756440)
 
-## 4. Repositório no GitHub
-Incluímos o link para o repositório no GitHub contendo a documentação completa do projeto, incluindo uma descrição do funcionamento, o código fonte, a lista de materiais e demais informações relevantes.
-
-Link para o Repositório GitHub: [Inserir aqui o link para o seu repositório GitHub]
-
+#Demostração do projeto sendo executado:
+https://youtu.be/wSes7WXDoG0?si=9FJy1RFKbv7OFrQn
 ## 5. Conclusões
 Os objetivos propostos foram alcançados com sucesso. A estação meteorológica desenvolvida é capaz de medir temperatura e umidade do ambiente, transmitindo os dados para um servidor MQTT de forma eficiente. Entre os principais problemas enfrentados, destaca-se a calibração dos sensores, que exigiu ajustes para garantir precisão nas leituras. As vantagens do projeto incluem a facilidade de acesso remoto aos dados e a sua baixa complexidade de implementação. Como melhorias futuras, sugerimos a adição de mais sensores para monitorar outros parâmetros climáticos, como pressão atmosférica e luminosidade.
 
