@@ -95,18 +95,18 @@ import dht
 import ujson
 from umqtt.simple import MQTTClient
 
-# Definir parâmetros do servidor MQTT
+Definir parâmetros do servidor MQTT
 MQTT_CLIENT_ID = "micropython-weather-demo"
 MQTT_BROKER = "broker.mqttdashboard.com"
 MQTT_USER = ""
 MQTT_PASSWORD = ""
 MQTT_TOPIC = "wokwi-weather"
 
-# Definir sensor e pinos
+ Definir sensor e pinos
 sensor = dht.DHT22(Pin(15))
 led = Pin(2, Pin.OUT)  # Definir LED no pino 2
 
-# Conectar-se ao WiFi
+Conectar-se ao WiFi
 print("Connecting to WiFi", end="")
 sta_if = network.WLAN(network.STA_IF)
 sta_if.active(True)
@@ -131,14 +131,14 @@ while True:
         "humidity": sensor.humidity(),
     })
 
-    # Publicar a mensagem se houver mudança
+    Publicar a mensagem se houver mudança
     if message != prev_weather:
         print("Updated!")
         print("Reporting to MQTT topic {}: {}".format(MQTT_TOPIC, message))
         client.publish(MQTT_TOPIC, message)
         prev_weather = message
         
-        # Lógica para o LED
+       Lógica para o LED
         if sensor.temperature() > 30:  # Se a temperatura for maior que 30°C
             led.on()  # Acende o LED
         else:
