@@ -116,7 +116,7 @@ while not sta_if.isconnected():
     time.sleep(0.1)
 print(" Connected!")
 
-# Conectar-se ao servidor MQTT
+Conectar-se ao servidor MQTT
 print("Connecting to MQTT server... ", end="")
 client = MQTTClient(MQTT_CLIENT_ID, MQTT_BROKER, user=MQTT_USER, password=MQTT_PASSWORD)
 client.connect()
