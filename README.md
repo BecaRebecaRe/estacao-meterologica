@@ -85,67 +85,6 @@ Outros gráficos e imagens do funcionamento do protótipo e da comunicação com
 ##Demostração do projeto sendo executado:
 https://youtu.be/wSes7WXDoG0?si=9FJy1RFKbv7OFrQn
 
-## Código 
-import network
-import time
-from machine import Pin
-import dht
-import ujson
-from umqtt.simple import MQTTClient
-
-# Definir parâmetros do servidor MQTT
-MQTT_CLIENT_ID = "micropython-weather-demo"
-MQTT_BROKER = "broker.mqttdashboard.com"
-MQTT_USER = ""
-MQTT_PASSWORD = ""
-MQTT_TOPIC = "wokwi-weather"
-
-# Definir sensor e pinos
-sensor = dht.DHT22(Pin(15))
-led = Pin(2, Pin.OUT)  # Definir LED no pino 2
-
-# Conectar-se ao WiFi
-print("Connecting to WiFi", end="")
-sta_if = network.WLAN(network.STA_IF)
-sta_if.active(True)
-sta_if.connect('Wokwi-GUEST', '')
-while not sta_if.isconnected():
-    print(".", end="")
-    time.sleep(0.1)
-print(" Connected!")
-
-# Conectar-se ao servidor MQTT
-print("Connecting to MQTT server... ", end="")
-client = MQTTClient(MQTT_CLIENT_ID, MQTT_BROKER, user=MQTT_USER, password=MQTT_PASSWORD)
-client.connect()
-print("Connected!")
-
-prev_weather = ""
-while True:
-    print("Measuring weather conditions... ", end="")
-    sensor.measure()  # Medir a temperatura e a umidade
-    message = ujson.dumps({
-        "temp": sensor.temperature(),
-        "humidity": sensor.humidity(),
-    })
-
-    # Publicar a mensagem se houver mudança
-    if message != prev_weather:
-        print("Updated!")
-        print("Reporting to MQTT topic {}: {}".format(MQTT_TOPIC, message))
-        client.publish(MQTT_TOPIC, message)
-        prev_weather = message
-        
-        # Lógica para o LED
-        if sensor.temperature() > 30:  # Se a temperatura for maior que 30°C
-            led.on()  # Acende o LED
-        else:
-            led.off()  # Desliga o LED
-    else:
-        print("No change")
-    
-    time.sleep(1)  # Atraso para a próxima medição
-
 ## 5. Conclusões
 Os objetivos propostos foram alcançados com sucesso. A estação meteorológica desenvolvida é capaz de medir temperatura e umidade do ambiente, transmitindo os dados para um servidor MQTT de forma eficiente. Entre os principais problemas enfrentados, destaca-se a calibração dos sensores, que exigiu ajustes para garantir precisão nas leituras. As vantagens do projeto incluem a facilidade de acesso remoto aos dados e a sua baixa complexidade de implementação. Como melhorias futuras, sugerimos a adição de mais sensores para monitorar outros parâmetros climáticos, como pressão atmosférica e luminosidade.
 
