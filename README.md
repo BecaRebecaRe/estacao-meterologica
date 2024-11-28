@@ -2,6 +2,41 @@
 
 ## 1. Introdução
 O projeto visa desenvolver uma estação meteorológica capaz de medir a temperatura e umidade do ambiente, utilizando sensores adequados. Essa estação será conectada à internet por meio de uma conexão Wi-Fi e fará uso do protocolo MQTT para comunicação. O objetivo é criar um sistema que permita monitorar e registrar as condições climáticas locais de forma remota e automatizada.
+## 1.1.	Subseções
+## 1. Objetivos do Projeto
+O código tem como objetivo implementar uma estação meteorológica IoT utilizando o microcontrolador ESP32/ESP8266 e o sensor DHT22. Ele mede a temperatura e a umidade do ambiente e publica os dados em tempo real em um corretor MQTT, possibilitando o monitoramento remoto das condições climáticas.
+## 2. Tecnologias Utilizadas
+•	Sensor DHT22: Utilizado
+•	Wi-fi:ConexWokwi-GUEST.
+•	Protocolo MQTT:Um prbroker.mqttdashboard.com.
+•	MicroPython: Sim
+•	Simulador Wokwi: Ferramenta
+•	Corretor MQTT:  broker.mqttdashboard.com
+•	LED no pino GPIO 2: O LED será controlado
+
+## 3. Metodologia
+1.	Configuração do Wi-Fi:
+O dispositivo está configurado para se conectar automaticamente à rede Wokwi-GUESTsem necessidade de senha.
+2.	Conexão ao Broker MQTT:
+O código utilizawokwi-weathernenhum corretor públicobroker.mqttdashboard.com.
+3.	Leitura de Dados do Sensor:
+O sensor D
+4.	Publicação de Dados:
+Os dados coletados
+5.	Visualização dos Dados:
+O usuário podehttp : //www.hivemq.
+
+## 4. Benefícios e Aplicações
+•	Monitoramento em Tempo Real:
+Os dados de temperatura e umidade são transmitidos em tempo real, permitindo que os usuários monitorem as condições ambientais externamente, com acesso a qualquer momento e de qualquer lugar.
+•	Educação e Treinamento:
+Este projeto oferece uma excelência
+•	Aplicações Reais:
+A estação meteorológica pode ser adaptada para mergulhadores
+•	Eficiência Energética:
+O sistema é projeto também em falta
+
+
 
 ## 2. Materiais e Métodos
 ### 2.1 Descrição do Projeto
